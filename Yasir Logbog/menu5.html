@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="DK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption and Public Keys</title>
+    <link rel="stylesheet" href="minStil.css">
+</head>
+  <style>
+    /* Styling af undersider */
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+    }
+    /*Når musen står over knapperne*/
+    nav ul li a:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Styling for HovedMenu-knappen i headeren */
+    header a.menu-button {
+      display: inline-block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      margin-top: 10px; /* lidt afstand fra overskriften */
+    }
+   /*Når musen står over Hovedmenu knappen*/
+    header a.menu-button:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Footer placering */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+  </style>
+
+<body>
+  <header>
+    <h1>Encryption and Public Keys</h1>
+    <a href="index.html" class="menu-button">HovedMenu</a>
+  </header>
+
+    <section class="content">
+    <nav>
+        <ul>
+          <li><a href="menu1.html" >Internettets opbygning - Fagbegreber</a></li>
+          <li><a href="menu2.html" >Wires, Cables &amp; WiFi</a></li>
+          <li><a href="menu3.html" >Packets, Routers &amp; Reliability</a></li>
+          <li><a href="menu4.html" >IP Addresses and DNS</a></li>
+          <li><a href="menu5.html" >Encryption and Public Keys</a></li>
+          <li><a href="menu6.html" >Cybersecurity and Crime</a></li>
+          <li><a href="menu7.html" >Gaming, videospil og Esport</a></li>
+          <li><a href="menu8.html" >Segmentanalyse</a></li>
+          <li><a href="menu9.html" >Interaktionsdesign og hjemmesider</a></li>
+          <li><a href="menu10.html">Programmering</a></li>
+          <li><a href="menu11.html">Innovation</a></li>
+          <li><a href="menu12.html">Mine Projekter</a></li>
+        </ul>
+      </nav>
+
+
+            <h3> Kryptering (Encryption):</h3>
+            <p>Kryptering er at man tager noget information og konverterer det til hemmelig kode, der skjuler informationens sande betydning.</p>
+
+            <h3> Dekryptering (Decryption):</h3>
+            <p>Modsatte af kryptering.</p>
+
+            <h3> Caesar’s Cifre (Caesar’s Ciphers):</h3>
+            <p>Caesars cifre betyder at skrive i kode, så teksten ikke umiddelbart kan forstås. Hvis man f.eks. bruger et skift på 3, vil bogstavet b blive til e.</p>
+
+        <img src="phot/Caesar's cifre.jpg" alt="Caesar's Cipher" width="40%">
+
+            <h3> Nøgle (Key):</h3>
+            <p>For Caesar Cipher er “key” altså forskydningsværdien, der angiver, hvor mange pladser til højre (eller venstre ved dekryptering) hvert bogstav skal rykkes. F.eks., hvis nøglen er 3, vil bogstavet “A” blive til “D”, “B” blive til “E” osv.</p>
+            <h3> 10-cifret nøgle:</h3>
+            <p>En 10-cifret nøgle for Caesar Cipher ville betyde en forskydning på 10 pladser i alfabetet. Hvert bogstav i beskeden forskydes altså 10 pladser til højre for at kryptere og 10 pladser til venstre for at dekryptere.</p>
+            <p>Fx HEJ</p>
+            <p>H forskydes 10 pladser og bliver til R.</p>
+            <p>E forskydes 10 pladser og bliver til O.</p>
+            <p>J forskydes 10 pladser og bliver til T.</p>
+            <p>“HEJ” bliver krypteret til “ROT” med en 10-cifret nøgle.</p>
+            <p>“ROT” kan dekrypteres med en 10-cifret nøgle, ved at vi skifter hvert bogstav 10 pladser til venstre i alfabetet, så vi kan få “HEJ”</p>
+            
+            <h3> Standard key length (256 bit):</h3>
+            <p>256-bit refererer til længden af ​​krypteringsnøglen, som er 256 bit lang. Det er en af ​​de mest sikre krypteringsstandarder, der er tilgængelige i dag, selv mod brute-force-angreb, hvor en angriber forsøger enhver mulig nøgle kombination.</p>
+
+            <h3> Symmetrisk kryptering:</h3>
+            <p>Både sender og modtager kender nøglen.</p>
+
+            <h3> Asymmetrisk kryptering / Public Key Kryptering:</h3>
+            <p>Den måde vi beskytter os i dag.</p>
+
+            <h3> Sikkerhedsprotokoller SSL (Secure Socket Layer) & TLS (Transport Layer Security):</h3>
+            <p>SSL kan sikre en internetforbindelse ved at kryptere data sendt mellem et websted og en browser. Man anvender primært TLS til at kryptere kommunikationen mellem webapplikationer og servere, såsom webbrowsere, der indlæser et websted.</p>
+    </section>
+<footer>
+    &copy; 2025 Yasirs Informatik logbog. Alle rettigheder forbeholdes.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="DK">
+
+ <head>
+  <title>Interaktionsdesign og hjemmesider</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="minStil.css">
+ </head>
+
+  <style>
+    /* Styling af undersider */
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+    }
+    /*Når musen står over knapperne*/
+    nav ul li a:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Styling for HovedMenu-knappen i headeren */
+    header a.menu-button {
+      display: inline-block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      margin-top: 10px; /* lidt afstand fra overskriften */
+    }
+   /*Når musen står over Hovedmenu knappen*/
+    header a.menu-button:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Footer placering */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+  </style>
+     
+ <body>
+  <header>
+    <h1>Interaktionsdesign og hjemmesider</h1>
+    <a href="index.html" class="menu-button">HovedMenu</a>
+  </header>
+
+    <section class="content">
+    <nav>
+        <ul>
+          <li><a href="menu1.html" >Internettets opbygning - Fagbegreber</a></li>
+          <li><a href="menu2.html" >Wires, Cables &amp; WiFi</a></li>
+          <li><a href="menu3.html" >Packets, Routers &amp; Reliability</a></li>
+          <li><a href="menu4.html" >IP Addresses and DNS</a></li>
+          <li><a href="menu5.html" >Encryption and Public Keys</a></li>
+          <li><a href="menu6.html" >Cybersecurity and Crime</a></li>
+          <li><a href="menu7.html" >Gaming, videospil og Esport</a></li>
+          <li><a href="menu8.html" >Segmentanalyse</a></li>
+          <li><a href="menu9.html" >Interaktionsdesign og hjemmesider</a></li>
+          <li><a href="menu10.html">Programmering</a></li>
+          <li><a href="menu11.html">Innovation</a></li>
+          <li><a href="menu12.html">Mine Projekter</a></li>
+        </ul>
+      </nav>
+
+        <h3>Interaktion:</h3>
+        <p>Interaktion er samspillet mellem en bruger og et it-system, hvor brugeren giver input (f.eks. klik eller tastetryk), og systemet reagerer med et output (f.eks. en ændring på skærmen). Det handler om, hvordan brugeren og systemet kommunikerer og arbejder sammen.</p>
+
+        <h3>Kommunikationsproces (afsender/hensigt, videregivelse/kommunikationsmiddel, modtager/reaktion):</h3>
+        <p>Afsender/Hensigt: Afsenderen har et budskab eller en hensigt, som skal formidles.</p>
+        <p>Videregivelse/Kommunikationsmiddel: Afsenderen vælger et kommunikationsmiddel (som f.eks. mundtlig tale, tekst, billede, email) for at overføre budskabet til modtageren.</p>
+        <p>Modtager/Reaktion: Modtageren modtager og tolker budskabet, og beslutter, om der skal reageres eller handles på det.</p>
+
+        <h3>Kommunikationsforstyrrelser:</h3>
+        <p>Kommunikationsforstyrrelser sker, når der opstår misforståelser mellem afsender og modtager. Det kan skyldes uklart sprog, tekniske problemer eller forskellige fortolkninger. For at undgå det er det vigtigt, at afsenderen er tydelig og tjekker, at modtageren forstår budskabet.</p>
+
+        <h3>Ikoner (fordele/ulemper ved ikoner):</h3>
+        <p>Ikonernes fordele kan være at tiltrække kunder til ens virksomhed, app mm.</p>
+        <p>Farver spiller en stor rolle ved ikoner, for at kunne fortælle, hvad virksomheden eller appen handler om.</p>
+        <p>Ikonernes ulemper kan være, at en kedelig ikon ikke vil skabe opmærksomhed.</p>
+
+        <h3>Laswells kommunikationsmodel:</h3>
+        <p>Modellen hjælper med at forstå, hvordan kommunikation fungerer, og hvad der er vigtigt at tænke over. Den bygger på fem vigtige spørgsmål, som afsenderen skal overveje.</p>
+        <h4>1. Hvem:</h4>
+        <p>Hvem er afsenderen, og hvad er afsenderens intention med kommunikationen? Dette spørgsmål handler om at forstå afsenderens rolle og hensigt bag budskabet.</p>
+        <h4>2. Siger hvad:</h4>
+        <p>Hvad vil afsenderen gerne sige? Det handler om selve beskeden og det, der bliver kommunikeret.</p>
+        <h4>3. Gennem hvilken kanal:</h4>
+        <p>Hvordan bliver budskabet sendt ud? Lasswell tænkte oprindeligt på, om annonceringen skete gennem avisannoncer, plakater eller biografreklamer. I dag er det dog vigtigere at overveje, hvordan brugeren modtager budskabet, om det sker via en smartphone, en PC med stor skærm, en tablet osv. Alt efter hvilken enhed der bruges, skal ting som skriftstørrelse, layout, overskrifter og farver tilpasses, så budskabet bliver så tydeligt og effektivt som muligt.</p>
+        <h4>4. Til hvem:</h4>
+        <p>Hvem skal modtage budskabet? Det er vigtigt at vide, hvem målgruppen er, fordi det bestemmer, hvordan man bedst siger det, så det giver mening for dem.</p>
+        <h4>5. Med hvilken effekt:</h4>
+        <p>Det handler om, hvad afsenderen gerne vil opnå med kommunikationen. For eksempel kan målet med en reklamekampagne være at øge salget med 10 %.</p>
+        <img src="phot/Laswells kommunikationsmodel.jpg" alt="Kommunikationsmodel" width="100%">
+
+        <h3>Interaktionsdesign (IxD):</h3>
+        <p>Interaktionsdesign handler om at skabe it-produkter, der er nemme og behagelige at bruge. Fokus er på at sikre, at brugeren hurtigt og effektivt kan udføre de ønskede opgaver. Det indebærer at designe funktioner og grænseflader, der fremmer brugervenlighed, hvilket gør systemet lettere at forstå og bruge.</p>
+
+        <h3>Brugervenlighed:</h3>
+        <p>Brugervenlighed betyder, at et system eller produkt er nemt at bruge, effektivt til at udføre opgaver og giver en god oplevelse for brugeren. Det handler om, hvor hurtigt og uden problemer brugeren kan forstå og interagere med systemet.</p>
+
+        <h3>Brugergrænseflade:</h3>
+        <p>Brugergrænsefladen er det, brugeren ser og bruger for at interagere med et it-system, som f.eks. knapper, skærme eller menuer. Den gør det muligt for brugeren at styre systemet. Designet skal være nemt og tilpasset den person, der bruger systemet mest.</p>
+
+        <h3>Brugertyper (primær/sekundær):</h3>
+        <p>Brugertyper handler om de forskellige personer, der bruger et it-system. Hver type har forskellige behov og måder at interagere med systemet på. For eksempel kan en primær bruger bruge systemet ofte, mens en sekundær bruger kun bruger det sjældent. Designet skal tage højde for, hvem der bruger systemet mest.</p>
+
+        <h3>Steve Krug: Don't make me think:</h3>
+        <p>Webdesignen skal være brugervenligt. Designet skal være enkelt og selvforklarende, så brugeren nemt kan finde ud af det uden forvirring.</p>
+
+        <h3>Brugsmønstre:</h3>
+        <p>Et brugsmønster beskriver de handlinger, en bruger gennemfører for at løse en bestemt opgave ved hjælp af et produkt eller en brugerflade. Det handler om at forstå hvad brugeren gør, hvordan de gør det, og i hvilken rækkefølge handlingerne sker.</p>
+        <p>Brugsmønstre er vigtige inden for interaktionsdesign, da de hjælper med at gøre de mest anvendte opgaver enkle og lettilgængelige, mens mindre almindelige opgaver kan kræve flere trin. For eksempel er det hurtigt og nemt at sende en besked i Messenger, fordi det er en typisk handling, mens det tager lidt længere tid at oprette en ny gruppechat, fordi det sker mere sjældent.</p>
+        <p>Ved at analysere brugsmønstre kan man designe en brugerflade, der passer til brugernes behov og vaner, så de væsentligste funktioner er nemme at tilgå, mens mindre relevante funktioner kan gemmes væk.</p>
+
+        <h3>Normans 6 designprincipper:</h3>
+        <h4>1. Visibility (Synlighed)</h4>
+        <p>Funktioner, som brugeren ofte anvender, skal være let tilgængelige og synlige. Hvis en funktion er svær at finde, kan brugeren overse den og tro, at den ikke eksisterer. Sjældent brugte funktioner kan skjules for at reducere visuel støj.</p>
+        <h4>2. Constraints (Begrænsninger)</h4>
+        <p>Brugeren bør kun præsenteres for relevante valgmuligheder for at undgå forvirring. Begrænsninger guider brugeren mod de ønskede handlinger og forhindrer fejl. Et godt princip her er "Keep it simple, stupid" (KISS).</p>
+        <h4>3. Affordance</h4>
+        <p>Et produkt eller en funktion skal tydeligt signalere, hvordan det skal bruges. En stol indbyder til at sidde på, en dørhåndtag til at blive trukket eller skubbet, og en blå, understreget tekst indbyder til at blive klikket på. Dette gør det intuitivt for brugeren at interagere med produktet.</p>
+        <h4>4. Mapping</h4>
+        <p>Der skal være en logisk sammenhæng mellem en handling og dens effekt. For eksempel skal en "Op"-knap føre brugeren opad, og en lydstyrkeknap med et "+" skal øge lyden. Hvis mapping ikke er intuitiv, kan brugeren blive forvirret.</p>
+        <h4>5. Consistency (Konsistens)</h4>
+        <p>Systemet skal være konsistent i sin funktionalitet og udseende. Brugeren lærer hurtigt et system, hvis det fungerer på samme måde hver gang, og brugerens erfaringer på én skærm skal kunne overføres til en anden skærm.</p>
+        <h4>6. Feedback</h4>
+        <p>Brugeren skal altid få en umiddelbar reaktion på sine handlinger. Dette kan være visuelle ændringer (som en knap, der ændrer farve), lyde eller haptiske signaler (mobiltelefonens vibration). Hvis et system er langsomt, bør det vise en indikator, såsom en indlæsningsanimation</p>
+
+        <h3>Typografi</h3>
+        <h4>- Fonte:</h4>
+            <p>Fonte er forskellige typer af skrifttyper, der bruges til at formidle tekst visuelt. Valget af font har stor betydning for, hvordan en tekst bliver opfattet og læst. Fonte kan være klassiske, moderne, enkle eller dekorative og bruges til at understøtte det visuelle udtryk på fx hjemmesider, plakater og bøger.</p>
+        <h4>- Serif/sans serif (med og uden fødder):</h4>
+            <p>Serif-fonte har små fødder (tap) for enden af bogstaverne, hvilket hjælper øjet med at følge linjerne i teksten. De bruges ofte i trykte medier som bøger og aviser, da de gør store tekstmængder lettere at læse. Eksempler: Times New Roman, Garamond, Georgia.</p>
+            <p>Sans Serif-fonte er skrifttyper uden fødder. De har et mere moderne, rent og minimalistisk udtryk og er særligt velegnede til digitale skærme. Eksempler: Arial, Helvetica, Verdana.</p>
+        <h4>- Display-Typografi fonte:</h4>
+            <p>Display-typografi dækker over skrifttyper, der er mere dekorative og kunstneriske. De bruges ofte til overskrifter, plakater og reklamer, hvor det visuelle udtryk er vigtigt. Disse fonte er typisk ikke egnede til lange tekster, da de kan være svære at læse. Eksempel: Broadway, Comic Sans, Old English Text MT.</p>
+        <h4>- Kontrast:</h4>
+            <p>Kontrast handler om at skabe forskelle mellem elementer for at gøre dem tydelige og lette at skelne fra hinanden. Kontrast kan bruges til at fremhæve vigtige dele af en tekst eller et design.</p>
+        <h4>- Formkontrast:</h4>
+            <p>Formkontrast opstår, når to elementer har modsatte egenskaber. Nogle eksempler er:</p>
+                <p>Stor kontra lille (f.eks. stor overskrift mod lille brødtekst)</p>
+                <p>Firkantet kontra rund (skarp skrifttype mod blød skrifttype)</p>
+                <p>Ung kontra gammel (moderne skrifttype mod klassisk skrifttype)</p>
+                <p>Varme kontra kulde (varme farver som rød og orange mod kolde farver som blå og grøn)</p>
+                <p>Lodret kontra vandret (vertikale linjer mod horisontale elementer)</p>
+        <h4>- Farvecirklen:</h4>
+        <img src="phot/Farvecirklen.jpg" alt="Kommunikationsmodel" width="100%">
+     
+                <p>Farvecirklen hjælper med at forstå, hvordan farver arbejder sammen. Farver, der ligger tæt på hinanden på cirklen, har lav kontrast, mens farver, der er længere væk fra hinanden, har høj kontrast. Komplementærfarver er de, der ligger direkte overfor hinanden, som f.eks. gul og blå, og de har den største kontrast.</p>
+                <p>Den bruges til at vælge farver, der enten skaber harmoni eller stærk kontrast, afhængigt af hvad man vil udtrykke.</p>
+
+        <h4>- Farveassociationer:</h4>
+            
+                <p>Farver sender forskellige signaler og vækker følelser. Nogle eksempler:</p>
+        <ul>
+                <li>Rød: Energi, passion, fare og kærlighed.</li>
+                <li>Orange: Glæde, livsglæde og optimisme.</li>
+                <li>Gul: Opmærksomhed, sol og glæde.</li>
+                <li>Grøn: Ro, natur og balance.</li>
+                <li>Blå: Seriøs, pålidelig og professionel.</li>
+                <li>Sort: Elegance, alvor og magt.</li>
+                <li>Hvid: Renhed, uskyld og enkelhed.</li>
+        </ul>
+                <p>Farver bruges i reklamer/logoer til at skabe bestemte følelser, for eksempel, kombinationen af rød, gul og orange kan få folk til at blive sultne.</p>
+
+              
+
+        
+     <h3>Gestaltlovene</h3>
+        <p>Gestaltlovene handler om, hvordan vi mennesker opfatter former, mønstre og relationer i det, vi ser. De beskriver, hvordan vi automatisk organiserer og grupperer elementer i vores synsfelt for at gøre det lettere at forstå.</p>
+        <h4>- Loven om nærhed (proximity):</h4>
+            <p>Når objekter er tætere på hinanden, ser vi dem som en gruppe. For eksempel, hvis en overskrift står tæt på brødteksten, opfatter vi dem som relaterede. På en hjemmeside vil knapper, der er tæt sammen, blive set som en del af samme funktion.</p>
+        <h4>- Loven lighed (similarity):</h4>
+            <p>Når objekter ser ens ud, opfatter vi dem som en gruppe. Hvis flere knapper på en hjemmeside har samme form, størrelse eller farve, ved vi, at de udfører samme handling.</p>
+        <h4>- Loven om lukkethed (closure):</h4>
+            <p>Gestaltloven om lukkethed betyder, at vi opfatter fragmenterede eller åbne figurer som hele, fordi vores hjerne automatisk fylder de manglende dele ud. På hjemmesider bruges denne lov til at gruppere elementer visuelt, som når en ramme omkring en boks (fx NemID-login) får os til at forstå, at boksen er en separat enhed.</p>
+        <h4>- Loven om kontinuitet og symmetri (Continuity & Symmetry and Order):</h4>
+            <p>Vi ser linjer og former som fortsættelser af hinanden, også selvom de er afbrudt. Vi foretrækker også symmetri, fordi det virker mere harmonisk og ordnet.</p>
+        <h4>- Loven om figur/baggrund - prægnans (Figure-ground):</h4>
+            <p>Vi opdeler det, vi ser, i en figur (det, der er vigtigst) og baggrund (det, der er mindre vigtigt). Det, der er mindre eller anderledes, bliver ofte set som figuren.</p>
+        <h4>- Loven om erfaring (common fate):</h4>
+            <p>Vores tidligere erfaringer hjælper os med at forstå, hvad symboler betyder. For eksempel, vi ved, at et floppydisk-ikon betyder "gem", selvom det ikke har noget at gøre med selve handlingen.</p>
+        <h4>- Loven om forbundethed (ej lov):</h4>
+            <p>Når elementer er forbundet med linjer eller noget andet, ser vi dem som en gruppe, selvom de egentlig er adskilte. Det bruges til at vise sammenhæng i design.</p>
+
+     <h3>Fem gode råd til en et brugervenligt interaktionsdesign:</h3>
+        <p>Klar og konsistent navigation</p>
+        <p>Enkelhed og minimalisme</p>
+        <p>Responsivt design</p>
+        <p>Giv brugerne feedback</p>
+        <p>Test designet</p>
+    
+</section>
+  <footer>
+    &copy; 2025 Yasirs Informatik logbog. Alle rettigheder forbeholdes.
+  </footer>
+
+ </body>
+
+</html>

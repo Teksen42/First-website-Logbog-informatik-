@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="DK">
+
+<head>
+  <title>Programmering</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="minStil.css">
+</head>
+
+  <style>
+    /* Styling af undersider */
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+    }
+    /*Når musen står over knapperne*/
+    nav ul li a:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Styling for HovedMenu-knappen i headeren */
+    header a.menu-button {
+      display: inline-block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+      margin-top: 10px; /* lidt afstand fra overskriften */
+    }
+   /*Når musen står over Hovedmenu knappen*/
+    header a.menu-button:hover {
+      background: black;
+      color: white;
+    }
+    
+    /* Footer placering */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+  </style>
+
+<body>
+  <header>
+    <h1>Programmering</h1>
+    <a href="index.html" class="menu-button">HovedMenu</a>
+  </header>
+
+  <section class="content">
+    <nav>
+      <ul>
+        <li><a href="menu1.html">Internettets opbygning - Fagbegreber</a></li>
+        <li><a href="menu2.html">Wires, Cables &amp; WiFi</a></li>
+        <li><a href="menu3.html">Packets, Routers &amp; Reliability</a></li>
+        <li><a href="menu4.html">IP Addresses and DNS</a></li>
+        <li><a href="menu5.html">Encryption and Public Keys</a></li>
+        <li><a href="menu6.html">Cybersecurity and Crime</a></li>
+        <li><a href="menu7.html">Gaming, videospil og Esport</a></li>
+        <li><a href="menu8.html">Segmentanalyse</a></li>
+        <li><a href="menu9.html">Interaktionsdesign og hjemmesider</a></li>
+        <li><a href="menu10.html">Programmering</a></li>
+        <li><a href="menu11.html">Innovation</a></li>
+        <li><a href="menu12.html">Mine Projekter</a></li>
+      </ul>
+    </nav>
+
+      <h3>Forgrening (inkl. screenshot):</h3>
+      <img src="phot/Forgrening.jpg" alt="Forgrening" width="100%">
+
+      <h3>Løkke (inkl. screenshot):</h3>
+      <img src="phot/Løkke.jpg" alt="Løkke" width="100%">
+
+      <h3>Variabler (inkl. screenshot):</h3>
+      <img src="phot/Variabler.jpg" alt="Variabler" width="100%">
+
+      <h3>HTTP and HTML</h3>
+      <h4>URL:</h4>
+      <p>Adressen på en webside.</p>
+      <h4>HTTP:</h4>
+      <p>HTTP (Hypertext Transfer Protocol) er en protokol, der bruges til at overføre data mellem en webbrowser og en webserver. Det bruges til at hente websider, sende formularer.</p>
+      <h4>HTML:</h4>
+      <p>HTML er sproget, der bruges til at lave hjemmesider. Det består af forskellige koder (tags), der bestemmer, hvordan tekst, billeder og links skal vises i en browser.</p>
+      <h4>GET-request:</h4>
+      <p>En GET-request er en HTTP-forespørgsel, der bruges til at hente data fra en server. Når du f.eks. indtaster en webadresse i din browser, sender den en GET-request for at hente siden. Dataen sendes i URL’en, og der ændres ikke noget på serveren.</p>
+      <h4>POST-requests:</h4>
+      <p>En POST-request er en HTTP-forespørgsel, der bruges til at sende data til en server, f.eks. når du udfylder en formular. Dataen sendes i selve forespørgslen (ikke i URL’en), og det kan bruges til at oprette eller ændre indhold på serveren.</p>
+      <h4>Cookie:</h4>
+      <p>En cookie er en lille tekstfil, som en hjemmeside gemmer i din browser for at huske oplysninger om dig, f.eks. login-status, præferencer eller indkøbskurv.</p>
+      <h4>Secure Sockets Layer (SSL) og Transport Layer Security (TLS):</h4>
+      <p>SSL (Secure Sockets Layer) og TLS (Transport Layer Security) er sikkerhedsprotokoller, der krypterer data mellem en browser og en server for at beskytte information mod hackere. TLS er den nyere og mere sikre version af SSL.</p>
+      <h4>Digital Certificate:</h4>
+      <p>Et digitalt certifikat er en elektronisk identitet, der bekræfter ejerskabet af en hjemmeside og sikrer sikker kommunikation via kryptering (SSL/TLS). Det udstedes af en certifikatautoritet.</p>
+
+      <h3>Kodningsværktøjer</h3>
+      <h4>Editor:</h4>
+      <p>En editor i programmering er et værktøj, hvor du skriver og redigerer kildekode. Den tilbyder funktioner som syntax-highlighting, autofuldførelse og fejlmarkering for at gøre kodningen lettere.</p>
+      <h4>Compiler:</h4>
+      <p>En compiler er et program, der oversætter kildekode skrevet i et højniveau-programmeringssprog (f.eks. C, Java) til maskinkode eller et lavere niveau, som en computer kan udføre. Kompilereren omdanner hele programmet ad gangen, hvilket gør det hurtigt at køre, når det først er kompileret.</p>
+      <h4>TextEdit (Mac):</h4>
+      <p>En simpel teksteditor til Mac, der kan bruges til at skrive og redigere tekstfiler som .txt eller .html.</p>
+      <h4>Notepad (PC):</h4>
+      <p>En grundlæggende teksteditor på Windows, der kan bruges til at skrive og redigere tekstfiler (.txt), HTML eller kodefiler.</p>
+      <h4>.txt/.htm/.css:</h4>
+      <ul>
+        <li>.txt: En simpel tekstfil uden formatering.</li>
+        <li>.htm/.html: Filformater til webdokumenter, der indeholder HTML-kode.</li>
+        <li>Tredje punkt</li>
+      </ul>
+      <h4>Webbrowser:</h4>
+      <p>En applikation, som bruges til at vise webindhold, herunder HTML, CSS og JavaScript. Eksempler er Chrome, Firefox og Safari.</p>
+
+      <h3>Html</h3>
+      <h4>Hvad er html?</h4>
+      <p>HTML (HyperText Markup Language), der bruges til at strukturere og formatere indhold på internettet. HTML definerer, hvordan tekst, billeder, links og andre elementer vises på en webside.</p>
+      <h4>Hvilke elementer finder man i et html dokument?</h4>
+      <p>Når du trykker F12 i de fleste browsere, åbnes Developer Tools (udviklerværktøjer), hvor du kan se HTML-koden og CSS-styling for denne side.</p>
+      <h4>Hvad er html tags (brug eksempler)?</h4>
+      <p>&lt;html&gt;</p>
+      <p>&lt;body&gt;</p>
+      <p>osv.</p>
+
+      <h3>CSS</h3>
+      <h4>Hvad er CSS?</h4>
+      <p>CSS (Cascading Style Sheets) bruges til at style og designe HTML-elementer, som farver, skrifttyper og layout.</p>
+      <h4>Hvordan bruger man CSS sammen med HTML (nævn tre måder at integrere CSS med HTML)?</h4>
+      <p>Jeg havde problemer, når jeg laver koden bliver den forbundet til hjemmesiden :(</p>
+
+      <h3>JavaScript</h3>
+      <h4>Hvad er JavaScript og hvad bruges det til?</h4>
+      <p>JavaScript er et programmeringssprog, der bruges til at gøre hjemmesider interaktive, f.eks. med animationer, dynamisk indhold og brugervenlige funktioner.</p>
+      <h4>Hvordan integreres JavaScript med HTML?</h4>
+      <p>JavaScript integreres med HTML ved at placere scripts inde i &lt;script&gt-tags, enten direkte i HTML-filen eller ved at linke til en ekstern fil.</p>
+          
+      <p>
+        &lt;script&gt;<br>
+        alert("Hej Bruger!");<br>
+        &lt;/script&gt;
+      </p>
+  
+
+      <h3>Syntaks</h3>
+      <h4>Giv eksempel på HTML syntaks.</h4>
+      <h4>Giv eksempel på CSS syntaks.</h4>
+      <h4>Giv eksempel på JavaScript syntaks.</h4>
+      <h4>Hvad er Camel Case (giv eksempler)?</h4>
+  </section>
+
+  <footer>
+    &copy; 2025 Yasirs Informatik logbog. Alle rettigheder forbeholdes.
+  </footer>
+</body>
+
+</html>

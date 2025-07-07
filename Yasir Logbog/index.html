@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="DK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasirs Informatik Logbog</title>
+  <link rel="stylesheet" href="minStil.css">
+
+  <style>
+    /* CSS START */
+
+    /* Header "Yasirs Informatik Logbog" */ 
+    header {
+      background:#0073e6;
+      color: white;
+      padding: 40px;
+      
+      text-align: center;
+    }
+    /*Størrelse på h1 skrift og linjeafstand*/
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    
+    }
+    /* Navigation af bokse */
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    /* Udseende af undersiderboks */
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      background: white;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background 0.3s, color 0.3s;
+    }
+    /* undersiderboks farveændring når man har musen på boksen */
+    nav ul li a:hover {
+      background: black;
+      color: white;
+    }
+    /* placering for velkomstteksten */
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    /* Størrelse og linjeafstand for velkomstteksten */
+    main p {
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+    /* Udseende/placering/tekststørrelse mm. for køb logbog knappen */ 
+    .købe-link {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    /* Køb logbog sort */   
+    .købe-link:hover {
+      background-color: black;
+    }
+    /* Sliderens style/knappernes placering */
+    .slider-kassen {
+      position: relative;
+      width: 58%;
+      max-width: 1000px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+    }
+    .slider {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slider img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    /* Knapper til slideren */
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer; /* Brugerens mus ændres */
+      font-size: 18px;
+      transition: background 0.3s;
+      z-index: 10;
+    }
+    /* Musen over sliderens knapper, og baggrundsfarven ændres. */
+    .slider-btn:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+     /* Footer placering */
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 5px 10px;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yasirs Informatik Logbog</h1>
+    <nav>
+      <ul>
+        <li><a href="menu1.html">Internettets opbygning - Fagbegreber</a></li>
+        <li><a href="menu2.html">Wires, Cables &amp; WiFi</a></li>
+        <li><a href="menu3.html">Packets, Routers &amp; Reliability</a></li>
+        <li><a href="menu4.html">IP Addresses and DNS</a></li>
+        <li><a href="menu5.html">Encryption and Public Keys</a></li>
+        <li><a href="menu6.html">Cybersecurity and Crime</a></li>
+        <li><a href="menu7.html">Gaming, videospil og Esport</a></li>
+        <li><a href="menu8.html">Segmentanalyse</a></li>
+        <li><a href="menu9.html">Interaktionsdesign og hjemmesider</a></li>
+        <li><a href="menu10.html">Programmering</a></li>
+        <li><a href="menu11.html">Innovation</a></li>
+        <li><a href="menu12.html">Mine Projekter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      Velkommen til Yasirs Informatik Logbog. Klik på et af linkene ovenfor for at udforske emner om internettets opbygning, netværkssikkerhed og meget mere!
+    </p>
+    <p>Køb logbogen nedenfor</p>
+    <a href="logbogKøb.html" target="_blank" class="købe-link">Køb Logbog</a>
+
+    <div class="slider-kassen">
+      <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+      <div class="slider">
+        <img src="phot/csm_inm_kachel_bebee8adea.jpg" alt="Slide 1">
+        <img src="phot/Yasir.jpg" alt="Slide 2">
+      </div>
+      <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Yasirs Informatik logbog. Alle rettigheder forbeholdes.
+  </footer>
+
+  <script>
+      //JavaScript Begynder :)
+      
+      // Variabel til at holde styr på, hvilket slide der vises
+    let currentIndex = 0;
+    //Vælger billedet fra .slider
+    const slides = document.querySelector(".slider");
+    //  Det totale antal slides
+    const totalSlides = 2;
+
+     // Funktion til at vise et bestemt slide baseret på index
+    function showSlide(index) 
+      {
+     // Hvis index er større eller = end det sidste slide, start forfra (Trykkes til højre ved sidste slide, skubbes du videre til første)
+      if (index >= totalSlides) {
+        currentIndex = 0;
+      } 
+        // Hvis index er mindre end 0, gå til det sidste slide (Trykkes til venstre ved første slide, skubbes du videre til sidste)
+        else if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } 
+        // Ellers sæt currentIndex til det angivne index
+        else {
+        currentIndex = index;
+      }
+    // Flyt slideren til siden, så det ønskede slide vises
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+      //Næste knappen næste billede/slide
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+      //tilbage knappen forrige billede/slide
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+
+    // Auto Slide hver 3. sekund/3000 milisekunder
+    setInterval(() => {
+      nextSlide();
+    }, 3000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="DK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Køb Logbog</title>
+</head>
+
+  <style>
+    /* Css start */
+      /*boksens firkant*/
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+      /*Skriftet*/
+    body {
+      font-family: sans-serif;
+      background: white;
+      color: black;
+      line-height: 1.6;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .content {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    /*Antal bog indtastning*/
+    label {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+    input[type="number"] {
+      font-size: 1.2rem;
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .buy-button {
+      background-color: blue;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .buy-button:hover {
+      background-color: black;
+    }
+  </style>
+<body>
+
+  <div class="content">
+    <h1>Køb Logbog</h1>
+    <p>Vælg antal logbøger, og klik på 'Køb' for at gennemføre købet.</p>
+
+    <!-- Antal logbøger -->
+    <form id="logbookForm">
+      <label for="quantity">Antal logbøger:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+      <button type="button" class="buy-button" onclick="buyLogbog()">Køb</button>
+    </form>
+  </div>
+
+  <script>
+    function buyLogbog() {
+      const quantity = document.getElementById("quantity").value;
+      if (quantity < 1) {
+        alert("Vælg venligst et gyldigt antal logbøger.");
+      } else {
+        alert(`Du har købt ${quantity} logbog/er. Tak for dit køb!`);
+      }
+    }
+  </script>
+
+</body>
+</html>
